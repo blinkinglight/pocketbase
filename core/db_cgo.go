@@ -1,12 +1,12 @@
-//go:build cgo
+//go:build cgo && !pq
 
 package core
 
 import (
 	"fmt"
 
-	"github.com/pocketbase/dbx"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/pocketbase/dbx"
 )
 
 func connectDB(dbPath string) (*dbx.DB, error) {
