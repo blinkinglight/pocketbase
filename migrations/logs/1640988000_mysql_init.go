@@ -26,9 +26,9 @@ func init() {
 			created TEXT NOT NULL DEFAULT '' ,
 			updated TEXT NOT NULL DEFAULT '' ,
 		) ENGINE = InnoDB;
-		
+
 		ALTER TABLE {{_requests}}
-		ADD PRIMARY KEY (id(200));
+		ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
 		COMMIT;
 
 		-- CREATE INDEX _request_status_idx on {{_requests}} (status);

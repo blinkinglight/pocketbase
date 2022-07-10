@@ -40,7 +40,7 @@ func init() {
 			);
 
 			ALTER TABLE {{_admins}}
-			ADD PRIMARY KEY (id(200));
+			ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
 			COMMIT;
 
 			CREATE TABLE {{_users}} (
@@ -56,7 +56,7 @@ func init() {
 			);
 
 			ALTER TABLE {{_users}}
-		ADD PRIMARY KEY (id(200));
+		ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
 		COMMIT;
 
 			CREATE TABLE {{_collections}} (
@@ -73,7 +73,7 @@ func init() {
 				updated    TEXT DEFAULT '' NOT NULL,
 			);
 			ALTER TABLE {{_collections}}
-		ADD PRIMARY KEY (id(200));
+		ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
 		COMMIT;
 
 			CREATE TABLE {{_params}} (
@@ -85,7 +85,7 @@ func init() {
 			);
 
 			ALTER TABLE {{_params}}
-		ADD PRIMARY KEY (id(200));
+		ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
 		COMMIT;
 		`).Execute()
 		if tablesErr != nil {
