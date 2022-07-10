@@ -10,6 +10,7 @@ require (
 	github.com/fatih/color v1.13.0
 	github.com/ganigeorgiev/fexpr v0.1.1
 	github.com/go-ozzo/ozzo-validation/v4 v4.3.0
+	github.com/go-sql-driver/mysql v1.6.0
 	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/labstack/echo/v5 v5.0.0-20220201181537-ed2888cfa198
 	github.com/lib/pq v1.10.4
@@ -47,6 +48,7 @@ require (
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/golangci/golangci-lint v1.46.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/googleapis/gax-go/v2 v2.4.0 // indirect

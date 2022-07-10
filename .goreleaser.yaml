@@ -20,6 +20,7 @@ builds:
       - arm64
     tags:
       - pq
+      - mysql
       - sqlite
       
 release:
