@@ -39,9 +39,9 @@ func init() {
 				updated         TEXT DEFAULT '' NOT NULL
 			);
 			
-			ALTER TABLE {{_admins}}
-			ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
-			COMMIT;
+			-- ALTER TABLE {{_admins}}
+			-- ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
+			-- COMMIT;
 
 			CREATE TABLE {{_users}} (
 				id                     TEXT NOT NULL,
@@ -55,9 +55,9 @@ func init() {
 				updated                TEXT DEFAULT '' NOT NULL
 			);
 
-			ALTER TABLE {{_users}}
-		ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
-		COMMIT;
+			-- ALTER TABLE {{_users}}
+		-- ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
+		-- COMMIT;
 
 			CREATE TABLE {{_collections}} (
 				id         TEXT NOT NULL,
@@ -72,9 +72,9 @@ func init() {
 				created    TEXT DEFAULT '' NOT NULL,
 				updated    TEXT DEFAULT '' NOT NULL
 			);
-			ALTER TABLE {{_collections}}
-		ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
-		COMMIT;
+			-- ALTER TABLE {{_collections}}
+			-- ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
+			-- COMMIT;
 
 			CREATE TABLE {{_params}} (
 				id      TEXT NOT NULL,
@@ -84,9 +84,9 @@ func init() {
 				updated TEXT DEFAULT '' NOT NULL
 			);
 
-			ALTER TABLE {{_params}}
-		ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
-		COMMIT;
+			-- ALTER TABLE {{_params}}
+			-- ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
+			-- COMMIT;
 		`).Execute()
 		if tablesErr != nil {
 			return tablesErr
