@@ -37,9 +37,11 @@ func init() {
 				lastResetSentAt TEXT DEFAULT '' NOT NULL,
 				created         TEXT DEFAULT '' NOT NULL,
 				updated         TEXT DEFAULT '' NOT NULL,
-				PRIMARY KEY (id)
-				
 			);
+
+			ALTER TABLE {{_admins}}
+			ADD PRIMARY KEY (id(200));
+			COMMIT;
 
 			CREATE TABLE {{_users}} (
 				id                     TEXT NOT NULL,
@@ -51,8 +53,11 @@ func init() {
 				lastVerificationSentAt TEXT DEFAULT '' NOT NULL,
 				created                TEXT DEFAULT '' NOT NULL,
 				updated                TEXT DEFAULT '' NOT NULL,
-				PRIMARY KEY (id)
 			);
+
+			ALTER TABLE {{_users}}
+		ADD PRIMARY KEY (id(200));
+		COMMIT;
 
 			CREATE TABLE {{_collections}} (
 				id         TEXT NOT NULL,
@@ -66,8 +71,10 @@ func init() {
 				deleteRule TEXT DEFAULT NULL,
 				created    TEXT DEFAULT '' NOT NULL,
 				updated    TEXT DEFAULT '' NOT NULL,
-				PRIMARY KEY (id)
 			);
+			ALTER TABLE {{_collections}}
+		ADD PRIMARY KEY (id(200));
+		COMMIT;
 
 			CREATE TABLE {{_params}} (
 				id      TEXT NOT NULL,
@@ -75,8 +82,11 @@ func init() {
 				value   JSON DEFAULT NULL,
 				created TEXT DEFAULT '' NOT NULL,
 				updated TEXT DEFAULT '' NOT NULL,
-				PRIMARY KEY (id)
 			);
+
+			ALTER TABLE {{_params}}
+		ADD PRIMARY KEY (id(200));
+		COMMIT;
 		`).Execute()
 		if tablesErr != nil {
 			return tablesErr

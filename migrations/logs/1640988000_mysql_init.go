@@ -25,8 +25,11 @@ func init() {
 			meta JSON NOT NULL DEFAULT '{}',
 			created TEXT NOT NULL DEFAULT '' ,
 			updated TEXT NOT NULL DEFAULT '' ,
-			PRIMARY KEY (id)
 		) ENGINE = InnoDB;
+		
+		ALTER TABLE {{_requests}}
+		ADD PRIMARY KEY (id(200));
+		COMMIT;
 
 		-- CREATE INDEX _request_status_idx on {{_requests}} (status);
 		-- CREATE INDEX _request_auth_idx on {{_requests}} (auth);
