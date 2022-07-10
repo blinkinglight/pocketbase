@@ -2,20 +2,20 @@ package tests
 
 func MockRequestLogsData(app *TestApp) error {
 	_, err := app.LogsDB().NewQuery(`
-		delete from {{_requests}};
+		delete from _requests;
 
-		insert into {{_requests}} (
-			[[id]],
-			[[url]],
-			[[method]],
-			[[status]],
-			[[auth]],
-			[[ip]],
-			[[referer]],
-			[[userAgent]],
-			[[meta]],
-			[[created]],
-			[[updated]]
+		insert into _requests (
+			id,
+			url,
+			method,
+			status,
+			auth,
+			ip,
+			referer,
+			userAgent,
+			meta,
+			created,
+			update]
 		)
 		values
 		(

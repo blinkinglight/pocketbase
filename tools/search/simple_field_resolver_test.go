@@ -53,11 +53,11 @@ func TestSimpleFieldResolverResolve(t *testing.T) {
 		{"", true, ""},
 		{" ", true, ""},
 		{"unknown", true, ""},
-		{"test", false, "[[test]]"},
+		{"test", false, "test"},
 		{"test.sub", true, ""},
 		{"test_regex", true, ""},
-		{"test_regex1", false, "[[test_regex1]]"},
-		{"Test columnify!", false, "[[Testcolumnify]]"},
+		{"test_regex1", false, "test_regex1"},
+		{"Test columnify!", false, "Testcolumnify"},
 	}
 
 	for i, s := range scenarios {

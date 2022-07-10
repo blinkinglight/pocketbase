@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/AlecAivazis/survey/v2 v2.3.5
-	github.com/aws/aws-sdk-go v1.44.48
+	github.com/aws/aws-sdk-go v1.44.51
 	github.com/disintegration/imaging v1.6.2
 	github.com/domodwyer/mailyak/v3 v3.3.3
 	github.com/fatih/color v1.13.0
@@ -13,7 +13,7 @@ require (
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/labstack/echo/v5 v5.0.0-20220201181537-ed2888cfa198
-	github.com/lib/pq v1.10.4
+	github.com/lib/pq v1.10.6
 	github.com/mattn/go-sqlite3 v1.14.14
 	github.com/microcosm-cc/bluemonday v1.0.19
 	github.com/pocketbase/dbx v1.6.0
@@ -66,8 +66,8 @@ require (
 	go.opencensus.io v0.23.0 // indirect
 	golang.org/x/image v0.0.0-20220617043117-41969df76e82 // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
-	golang.org/x/net v0.0.0-20220706163947-c90051bbdb60 // indirect
-	golang.org/x/sys v0.0.0-20220704084225-05e143d24a9e // indirect
+	golang.org/x/net v0.0.0-20220708220712-1185a9018129 // indirect
+	golang.org/x/sys v0.0.0-20220708085239-5a0f0661e09d // indirect
 	golang.org/x/term v0.0.0-20220526004731-065cf7ba2467 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20220609170525-579cf78fd858 // indirect
@@ -75,12 +75,12 @@ require (
 	golang.org/x/xerrors v0.0.0-20220609144429-65e65417b02f // indirect
 	google.golang.org/api v0.86.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20220706132729-d86698d07c53 // indirect
+	google.golang.org/genproto v0.0.0-20220708155623-50e5f4832e73 // indirect
 	google.golang.org/grpc v1.47.0 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	lukechampine.com/uint128 v1.2.0 // indirect
 	modernc.org/cc/v3 v3.36.0 // indirect
-	modernc.org/ccgo/v3 v3.16.6 // indirect
+	modernc.org/ccgo/v3 v3.16.7 // indirect
 	modernc.org/libc v1.16.14 // indirect
 	modernc.org/mathutil v1.4.1 // indirect
 	modernc.org/memory v1.1.1 // indirect

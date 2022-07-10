@@ -40,7 +40,7 @@ func (dao *Dao) DB() dbx.Builder {
 // based on the provided model argument.
 func (dao *Dao) ModelQuery(m models.Model) *dbx.SelectQuery {
 	tableName := m.TableName()
-	return dao.db.Select(fmt.Sprintf("{{%s}}.*", tableName)).From(tableName)
+	return dao.db.Select(fmt.Sprintf("%s.*", tableName)).From(tableName)
 }
 
 // FindById finds a single db record with the specified id and

@@ -54,5 +54,5 @@ func (r *SimpleFieldResolver) Resolve(field string) (resultName string, placehol
 		return "", nil, fmt.Errorf("Failed to resolve field %q.", field)
 	}
 
-	return fmt.Sprintf("[[%s]]", inflector.Columnify(field)), nil, nil
+	return fmt.Sprintf("%s", inflector.Columnify(field)), nil, nil
 }

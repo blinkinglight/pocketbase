@@ -62,7 +62,7 @@ func TestRequestsStats(t *testing.T) {
 	expected := `[{"total":1,"date":"2022-05-01 10:00:00.000"},{"total":1,"date":"2022-05-02 10:00:00.000"}]`
 
 	now := time.Now().UTC().Format(types.DefaultDateLayout)
-	exp := dbx.NewExp("[[created]] <= {:date}", dbx.Params{"date": now})
+	exp := dbx.NewExp("created <= {:date}", dbx.Params{"date": now})
 	result, err := app.LogsDao().RequestsStats(exp)
 	if err != nil {
 		t.Fatal(err)

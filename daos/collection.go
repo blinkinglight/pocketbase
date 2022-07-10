@@ -47,7 +47,7 @@ func (dao *Dao) IsCollectionNameUnique(name string, excludeId string) bool {
 	err := dao.CollectionQuery().
 		Select("count(*)").
 		AndWhere(dbx.Not(dbx.HashExp{"id": excludeId})).
-		AndWhere(dbx.NewExp("LOWER([[name]])={:name}", dbx.Params{"name": strings.ToLower(name)})).
+		AndWhere(dbx.NewExp("LOWER(name)={:name}", dbx.Params{"name": strings.ToLower(name)})).
 		Limit(1).
 		Row(&exists)
 

@@ -14,7 +14,7 @@ func TestParamQuery(t *testing.T) {
 	app, _ := tests.NewTestApp()
 	defer app.Cleanup()
 
-	expected := "SELECT {{_params}}.* FROM `_params`"
+	expected := "SELECT _params.* FROM `_params`"
 
 	sql := app.Dao().ParamQuery().Build().SQL()
 	if sql != expected {

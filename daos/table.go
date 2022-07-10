@@ -11,7 +11,7 @@ func (dao *Dao) HasTable(tableName string) bool {
 	err := dao.DB().Select("count(*)").
 		From("sqlite_schema").
 		AndWhere(dbx.HashExp{"type": "table"}).
-		AndWhere(dbx.NewExp("LOWER([[name]])=LOWER({:tableName})", dbx.Params{"tableName": tableName})).
+		AndWhere(dbx.NewExp("LOWER(name)=LOWER({:tableName})", dbx.Params{"tableName": tableName})).
 		Limit(1).
 		Row(&exists)
 

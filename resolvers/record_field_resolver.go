@@ -137,7 +137,7 @@ func (r *RecordFieldResolver) Resolve(fieldName string) (resultName string, plac
 
 		// base model prop (always available but not part of the collection schema)
 		if list.ExistInSlice(prop, baseModelFields) {
-			return fmt.Sprintf("[[%s.%s]]", inflector.Columnify(currentTableAlias), inflector.Columnify(prop)), nil, nil
+			return fmt.Sprintf("%s.%s", inflector.Columnify(currentTableAlias), inflector.Columnify(prop)), nil, nil
 		}
 
 		field := collection.Schema.GetFieldByName(prop)
@@ -147,7 +147,7 @@ func (r *RecordFieldResolver) Resolve(fieldName string) (resultName string, plac
 
 		// last prop
 		if i == totalProps-1 {
-			return fmt.Sprintf("[[%s.%s]]", inflector.Columnify(currentTableAlias), inflector.Columnify(prop)), nil, nil
+			return fmt.Sprintf("%s.%s", inflector.Columnify(currentTableAlias), inflector.Columnify(prop)), nil, nil
 		}
 
 		// check if it is a relation field
@@ -270,7 +270,7 @@ func (r *RecordFieldResolver) addJoin(tableName, tableAlias, fieldName, ref, ref
 	if ref != "" {
 		on = dbx.NewExp(fmt.Sprintf(
 			// 'LIKE' expr is used to handle the case when the reference field supports multiple values (aka. is json array)
-			"[[%s.%s]] LIKE ('%%' || [[%s.%s]] || '%%')",
+			"%s.%s LIKE ('%%' || %s.%s || '%%')",
 			inflector.Columnify(ref),
 			inflector.Columnify(refFieldName),
 			inflector.Columnify(tableAlias),

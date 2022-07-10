@@ -38,26 +38,26 @@ func TestRecordFieldResolverUpdateQuery(t *testing.T) {
 		// single rel
 		{"onerel.title", []string{
 			"SELECT DISTINCT `demo4`.* FROM `demo4`",
-			" LEFT JOIN `demo4` `demo4_onerel` ON [[demo4.onerel]] LIKE ('%' || [[demo4_onerel.id]] || '%')",
+			" LEFT JOIN `demo4` `demo4_onerel` ON demo4.onerel LIKE ('%' || demo4_onerel.id || '%')",
 		}},
 		// nested incomplete rels
 		{"manyrels.onerel", []string{
 			"SELECT DISTINCT `demo4`.* FROM `demo4`",
-			" LEFT JOIN `demo4` `demo4_manyrels` ON [[demo4.manyrels]] LIKE ('%' || [[demo4_manyrels.id]] || '%')",
+			" LEFT JOIN `demo4` `demo4_manyrels` ON demo4.manyrels LIKE ('%' || demo4_manyrels.id || '%')",
 		}},
 		// nested complete rels
 		{"manyrels.onerel.title", []string{
 			"SELECT DISTINCT `demo4`.* FROM `demo4`",
-			" LEFT JOIN `demo4` `demo4_manyrels` ON [[demo4.manyrels]] LIKE ('%' || [[demo4_manyrels.id]] || '%')",
-			" LEFT JOIN `demo4` `demo4_manyrels_onerel` ON [[demo4_manyrels.onerel]] LIKE ('%' || [[demo4_manyrels_onerel.id]] || '%')",
+			" LEFT JOIN `demo4` `demo4_manyrels` ON demo4.manyrels LIKE ('%' || demo4_manyrels.id || '%')",
+			" LEFT JOIN `demo4` `demo4_manyrels_onerel` ON demo4_manyrels.onerel LIKE ('%' || demo4_manyrels_onerel.id || '%')",
 		}},
 		// // repeated nested rels
 		{"manyrels.onerel.manyrels.onerel.title", []string{
 			"SELECT DISTINCT `demo4`.* FROM `demo4`",
-			" LEFT JOIN `demo4` `demo4_manyrels` ON [[demo4.manyrels]] LIKE ('%' || [[demo4_manyrels.id]] || '%')",
-			" LEFT JOIN `demo4` `demo4_manyrels_onerel` ON [[demo4_manyrels.onerel]] LIKE ('%' || [[demo4_manyrels_onerel.id]] || '%')",
-			" LEFT JOIN `demo4` `demo4_manyrels_onerel_manyrels` ON [[demo4_manyrels_onerel.manyrels]] LIKE ('%' || [[demo4_manyrels_onerel_manyrels.id]] || '%')",
-			" LEFT JOIN `demo4` `demo4_manyrels_onerel_manyrels_onerel` ON [[demo4_manyrels_onerel_manyrels.onerel]] LIKE ('%' || [[demo4_manyrels_onerel_manyrels_onerel.id]] || '%')",
+			" LEFT JOIN `demo4` `demo4_manyrels` ON demo4.manyrels LIKE ('%' || demo4_manyrels.id || '%')",
+			" LEFT JOIN `demo4` `demo4_manyrels_onerel` ON demo4_manyrels.onerel LIKE ('%' || demo4_manyrels_onerel.id || '%')",
+			" LEFT JOIN `demo4` `demo4_manyrels_onerel_manyrels` ON demo4_manyrels_onerel.manyrels LIKE ('%' || demo4_manyrels_onerel_manyrels.id || '%')",
+			" LEFT JOIN `demo4` `demo4_manyrels_onerel_manyrels_onerel` ON demo4_manyrels_onerel_manyrels.onerel LIKE ('%' || demo4_manyrels_onerel_manyrels_onerel.id || '%')",
 		}},
 	}
 
@@ -108,29 +108,29 @@ func TestRecordFieldResolverResolveSchemaFields(t *testing.T) {
 		{" ", true, ""},
 		{"unknown", true, ""},
 		{"invalid format", true, ""},
-		{"id", false, "[[demo4.id]]"},
-		{"created", false, "[[demo4.created]]"},
-		{"updated", false, "[[demo4.updated]]"},
-		{"title", false, "[[demo4.title]]"},
+		{"id", false, "demo4.id"},
+		{"created", false, "demo4.created"},
+		{"updated", false, "demo4.updated"},
+		{"title", false, "demo4.title"},
 		{"title.test", true, ""},
-		{"manyrels", false, "[[demo4.manyrels]]"},
+		{"manyrels", false, "demo4.manyrels"},
 		{"manyrels.", true, ""},
 		{"manyrels.unknown", true, ""},
-		{"manyrels.title", false, "[[demo4_manyrels.title]]"},
-		{"manyrels.onerel.manyrels.onefile", false, "[[demo4_manyrels_onerel_manyrels.onefile]]"},
+		{"manyrels.title", false, "demo4_manyrels.title"},
+		{"manyrels.onerel.manyrels.onefile", false, "demo4_manyrels_onerel_manyrels.onefile"},
 		{"@collect", true, ""},
 		{"collection.demo4.title", true, ""},
 		{"@collection", true, ""},
 		{"@collection.unknown", true, ""},
 		{"@collection.demo", true, ""},
 		{"@collection.demo.", true, ""},
-		{"@collection.demo.title", false, "[[c_demo.title]]"},
-		{"@collection.demo4.title", false, "[[c_demo4.title]]"},
-		{"@collection.demo4.id", false, "[[c_demo4.id]]"},
-		{"@collection.demo4.created", false, "[[c_demo4.created]]"},
-		{"@collection.demo4.updated", false, "[[c_demo4.updated]]"},
+		{"@collection.demo.title", false, "c_demo.title"},
+		{"@collection.demo4.title", false, "c_demo4.title"},
+		{"@collection.demo4.id", false, "c_demo4.id"},
+		{"@collection.demo4.created", false, "c_demo4.created"},
+		{"@collection.demo4.updated", false, "c_demo4.updated"},
 		{"@collection.demo4.manyrels.missing", true, ""},
-		{"@collection.demo4.manyrels.onerel.manyrels.onerel.onefile", false, "[[c_demo4_manyrels_onerel_manyrels_onerel.onefile]]"},
+		{"@collection.demo4.manyrels.onerel.manyrels.onerel.onefile", false, "c_demo4_manyrels_onerel_manyrels_onerel.onefile"},
 	}
 
 	for i, s := range scenarios {

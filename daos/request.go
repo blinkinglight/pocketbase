@@ -57,7 +57,7 @@ func (dao *Dao) DeleteOldRequests(createdBefore time.Time) error {
 	tableName := m.TableName()
 
 	formattedDate := createdBefore.UTC().Format(types.DefaultDateLayout)
-	expr := dbx.NewExp("[[created]] <= {:date}", dbx.Params{"date": formattedDate})
+	expr := dbx.NewExp("created <= {:date}", dbx.Params{"date": formattedDate})
 
 	_, err := dao.DB().Delete(tableName, expr).Execute()
 
