@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/blinkinglight/pocketbase/tools/rest"
+	"github.com/blinkinglight/pocketbase-mysql/tools/rest"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )
 

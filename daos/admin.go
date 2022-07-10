@@ -3,8 +3,8 @@ package daos
 import (
 	"errors"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
 	"github.com/pocketbase/dbx"
 )
 

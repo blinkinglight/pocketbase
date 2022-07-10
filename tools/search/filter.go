@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/blinkinglight/pocketbase/tools/security"
-	"github.com/blinkinglight/pocketbase/tools/store"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/tools/store"
 	"github.com/ganigeorgiev/fexpr"
 	"github.com/pocketbase/dbx"
 	"github.com/spf13/cast"

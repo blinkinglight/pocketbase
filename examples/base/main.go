@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/blinkinglight/pocketbase"
-	"github.com/blinkinglight/pocketbase/apis"
-	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase-mysql"
+	"github.com/blinkinglight/pocketbase-mysql/apis"
+	"github.com/blinkinglight/pocketbase-mysql/core"
 	"github.com/labstack/echo/v5"
 )
 

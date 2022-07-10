@@ -3,7 +3,7 @@ package store_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/store"
+	"github.com/blinkinglight/pocketbase-mysql/tools/store"
 )
 
 func TestNew(t *testing.T) {

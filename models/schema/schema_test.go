@@ -3,7 +3,7 @@ package schema_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/models/schema"
+	"github.com/blinkinglight/pocketbase-mysql/models/schema"
 )
 
 func TestNewSchemaAndFields(t *testing.T) {

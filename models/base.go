@@ -4,8 +4,8 @@ package models
 import (
 	"errors"
 
-	"github.com/blinkinglight/pocketbase/tools/security"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	"golang.org/x/crypto/bcrypt"
 )
 

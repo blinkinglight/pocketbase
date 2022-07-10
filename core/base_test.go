@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/mailer"
+	"github.com/blinkinglight/pocketbase-mysql/tools/mailer"
 )
 
 func TestNewBaseApp(t *testing.T) {

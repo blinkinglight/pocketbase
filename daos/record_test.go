@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/models/schema"
-	"github.com/blinkinglight/pocketbase/tests"
-	"github.com/blinkinglight/pocketbase/tools/list"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/models/schema"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tools/list"
 	"github.com/pocketbase/dbx"
 )
 

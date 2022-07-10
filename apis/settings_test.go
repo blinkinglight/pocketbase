@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 )
 
 func TestSettingsList(t *testing.T) {

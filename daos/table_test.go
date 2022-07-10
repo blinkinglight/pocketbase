@@ -3,8 +3,8 @@ package daos_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tests"
-	"github.com/blinkinglight/pocketbase/tools/list"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tools/list"
 )
 
 func TestHasTable(t *testing.T) {

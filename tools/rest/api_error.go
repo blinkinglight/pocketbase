@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/blinkinglight/pocketbase/tools/inflector"
+	"github.com/blinkinglight/pocketbase-mysql/tools/inflector"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )
 

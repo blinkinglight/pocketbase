@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/tools/auth"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/tools/auth"
 )
 
 func TestSettingsValidate(t *testing.T) {

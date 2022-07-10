@@ -4,7 +4,7 @@ import (
 	"io"
 	"net/mail"
 
-	"github.com/blinkinglight/pocketbase/tools/mailer"
+	"github.com/blinkinglight/pocketbase-mysql/tools/mailer"
 )
 
 var _ mailer.Mailer = (*TestMailer)(nil)

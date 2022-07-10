@@ -6,10 +6,10 @@ package migrations
 import (
 	"fmt"
 
-	"github.com/blinkinglight/pocketbase/daos"
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/models/schema"
-	"github.com/blinkinglight/pocketbase/tools/migrate"
+	"github.com/blinkinglight/pocketbase-mysql/daos"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/models/schema"
+	"github.com/blinkinglight/pocketbase-mysql/tools/migrate"
 	"github.com/pocketbase/dbx"
 )
 
@@ -28,7 +28,7 @@ func Register(
 func init() {
 	AppMigrations.Register(func(db dbx.Builder) error {
 		_, tablesErr := db.NewQuery(`
-			CREATE TABLE {{_admins}} (
+			CREATE TABLE _admins (
 				[[id]]              TEXT PRIMARY KEY,
 				[[avatar]]          INTEGER DEFAULT 0 NOT NULL,
 				[[email]]           TEXT UNIQUE NOT NULL,

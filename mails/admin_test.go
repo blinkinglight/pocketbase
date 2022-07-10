@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/mails"
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/mails"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 )
 
 func TestSendAdminPasswordReset(t *testing.T) {

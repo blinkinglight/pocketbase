@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/tools/mailer"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/tools/mailer"
 )
 
 // TestApp is a wrapper app instance used for testing.

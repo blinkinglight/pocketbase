@@ -3,9 +3,9 @@ package apis
 import (
 	"net/http"
 
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/forms"
-	"github.com/blinkinglight/pocketbase/tools/rest"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/forms"
+	"github.com/blinkinglight/pocketbase-mysql/tools/rest"
 	"github.com/labstack/echo/v5"
 )
 

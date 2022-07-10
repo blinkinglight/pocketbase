@@ -4,13 +4,13 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/forms"
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tokens"
-	"github.com/blinkinglight/pocketbase/tools/rest"
-	"github.com/blinkinglight/pocketbase/tools/routine"
-	"github.com/blinkinglight/pocketbase/tools/search"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/forms"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tokens"
+	"github.com/blinkinglight/pocketbase-mysql/tools/rest"
+	"github.com/blinkinglight/pocketbase-mysql/tools/routine"
+	"github.com/blinkinglight/pocketbase-mysql/tools/search"
 	"github.com/labstack/echo/v5"
 )
 

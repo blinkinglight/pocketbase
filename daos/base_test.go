@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/daos"
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/daos"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 )
 
 func TestNew(t *testing.T) {
@@ -32,15 +32,15 @@ func TestDaoModelQuery(t *testing.T) {
 	}{
 		{
 			&models.Collection{},
-			"SELECT {{_collections}}.* FROM `_collections`",
+			"SELECT `_collections`.* FROM `_collections`",
 		},
 		{
 			&models.User{},
-			"SELECT {{_users}}.* FROM `_users`",
+			"SELECT `_users`.* FROM `_users`",
 		},
 		{
 			&models.Request{},
-			"SELECT {{_requests}}.* FROM `_requests`",
+			"SELECT `_requests`.* FROM `_requests`",
 		},
 	}
 

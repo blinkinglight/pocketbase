@@ -7,13 +7,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/daos"
-	"github.com/blinkinglight/pocketbase/forms/validators"
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/models/schema"
-	"github.com/blinkinglight/pocketbase/tests"
-	"github.com/blinkinglight/pocketbase/tools/rest"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/daos"
+	"github.com/blinkinglight/pocketbase-mysql/forms/validators"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/models/schema"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tools/rest"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )
 

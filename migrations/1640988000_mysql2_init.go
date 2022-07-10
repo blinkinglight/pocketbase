@@ -6,10 +6,10 @@ package migrations
 import (
 	"fmt"
 
-	"github.com/blinkinglight/pocketbase/daos"
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/models/schema"
-	"github.com/blinkinglight/pocketbase/tools/migrate"
+	"github.com/blinkinglight/pocketbase-mysql/daos"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/models/schema"
+	"github.com/blinkinglight/pocketbase-mysql/tools/migrate"
 	"github.com/pocketbase/dbx"
 )
 
@@ -28,7 +28,7 @@ func Register(
 func init() {
 	AppMigrations.Register(func(db dbx.Builder) error {
 		_, tablesErr := db.NewQuery(`
-			CREATE TABLE if not exists {{_admins}} (
+			CREATE TABLE if not exists _admins (
 				id              TEXT NOT NULL,
 				avatar          INTEGER DEFAULT 0 NOT NULL,
 				email           TEXT NOT NULL DEFAULT '' ,
@@ -43,7 +43,7 @@ func init() {
 			return tablesErr
 		}
 		_, tablesErr = db.NewQuery(`
-			CREATE TABLE if not exists {{_users}} (
+			CREATE TABLE if not exists _users (
 				id                     TEXT NOT NULL,
 				verified               BOOLEAN DEFAULT FALSE NOT NULL,
 				email                  TEXT NOT NULL,
@@ -59,7 +59,7 @@ func init() {
 			return tablesErr
 		}
 		_, tablesErr = db.NewQuery(`
-			CREATE TABLE if not exists {{_collections}} (
+			CREATE TABLE if not exists _collections (
 				id         TEXT NOT NULL,
 				system     BOOLEAN NOT NULL DEFAULT FALSE,
 				name       TEXT NOT NULL,
@@ -77,7 +77,7 @@ func init() {
 			return tablesErr
 		}
 		_, tablesErr = db.NewQuery(`
-			CREATE TABLE if not exists {{_params}} (
+			CREATE TABLE if not exists _params (
 				id      TEXT NOT NULL,
 				` + "`" + `key` + "`" + `     TEXT NOT NULL,
 				` + "`" + `value` + "`" + `   JSON DEFAULT NULL,

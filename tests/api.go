@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blinkinglight/pocketbase/apis"
+	"github.com/blinkinglight/pocketbase-mysql/apis"
 	"github.com/labstack/echo/v5"
 )
 

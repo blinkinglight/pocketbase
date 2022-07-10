@@ -3,15 +3,15 @@ package daos_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 )
 
 func TestUserQuery(t *testing.T) {
 	app, _ := tests.NewTestApp()
 	defer app.Cleanup()
 
-	expected := "SELECT {{_users}}.* FROM `_users`"
+	expected := "SELECT `_users`.* FROM `_users`"
 
 	sql := app.Dao().UserQuery().Build().SQL()
 	if sql != expected {

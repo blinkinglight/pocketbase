@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/blinkinglight/pocketbase/tools/inflector"
+	"github.com/blinkinglight/pocketbase-mysql/tools/inflector"
 	"github.com/fatih/color"
 	"github.com/pocketbase/dbx"
 	"github.com/spf13/cast"

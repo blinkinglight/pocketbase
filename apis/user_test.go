@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 	"github.com/labstack/echo/v5"
 )
 

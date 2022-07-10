@@ -5,11 +5,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/apis"
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tests"
-	"github.com/blinkinglight/pocketbase/tools/subscriptions"
+	"github.com/blinkinglight/pocketbase-mysql/apis"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tools/subscriptions"
 	"github.com/labstack/echo/v5"
 )
 

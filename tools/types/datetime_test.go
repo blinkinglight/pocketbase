@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 )
 
 func TestNowDateTime(t *testing.T) {

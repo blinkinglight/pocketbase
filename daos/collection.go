@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/models/schema"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/models/schema"
 	"github.com/pocketbase/dbx"
 )
 

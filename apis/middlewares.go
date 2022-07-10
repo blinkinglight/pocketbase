@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tools/rest"
-	"github.com/blinkinglight/pocketbase/tools/routine"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tools/rest"
+	"github.com/blinkinglight/pocketbase-mysql/tools/routine"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	"github.com/labstack/echo/v5"
 	"github.com/spf13/cast"
 )

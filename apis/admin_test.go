@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 	"github.com/labstack/echo/v5"
 	"github.com/pocketbase/dbx"
 )
@@ -469,7 +469,7 @@ func TestAdminCreate(t *testing.T) {
 			Body:   strings.NewReader(`{"email":"testnew@example.com","password":"1234567890","passwordConfirm":"1234567890","avatar":3}`),
 			BeforeFunc: func(t *testing.T, app *tests.TestApp, e *echo.Echo) {
 				// delete all admins
-				_, err := app.Dao().DB().NewQuery("DELETE FROM {{_admins}}").Execute()
+				_, err := app.Dao().DB().NewQuery("DELETE FROM _admins").Execute()
 				if err != nil {
 					t.Fatal(err)
 				}

@@ -9,8 +9,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/blinkinglight/pocketbase/cmd"
-	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase-mysql/cmd"
+	"github.com/blinkinglight/pocketbase-mysql/core"
 	"github.com/spf13/cobra"
 )
 

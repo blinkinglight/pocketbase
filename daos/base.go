@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase-mysql/models"
 	"github.com/pocketbase/dbx"
 )
 

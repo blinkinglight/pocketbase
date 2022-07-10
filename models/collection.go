@@ -1,6 +1,6 @@
 package models
 
-import "github.com/blinkinglight/pocketbase/models/schema"
+import "github.com/blinkinglight/pocketbase-mysql/models/schema"
 
 var _ Model = (*Collection)(nil)
 

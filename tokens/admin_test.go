@@ -3,8 +3,8 @@ package tokens_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tests"
-	"github.com/blinkinglight/pocketbase/tokens"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tokens"
 )
 
 func TestNewAdminAuthToken(t *testing.T) {

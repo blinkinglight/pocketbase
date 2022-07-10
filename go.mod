@@ -1,4 +1,4 @@
-module github.com/blinkinglight/pocketbase
+module github.com/blinkinglight/pocketbase-mysql
 
 go 1.18
 
@@ -46,6 +46,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.16.9 // indirect
 	github.com/aws/smithy-go v1.12.0 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
+	github.com/blinkinglight/pocketbase v0.2.1 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect

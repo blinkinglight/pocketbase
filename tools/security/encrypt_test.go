@@ -3,7 +3,7 @@ package security_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
 )
 
 func TestS256Challenge(t *testing.T) {

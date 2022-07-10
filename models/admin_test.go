@@ -3,7 +3,7 @@ package models_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase-mysql/models"
 )
 
 func TestAdminTableName(t *testing.T) {

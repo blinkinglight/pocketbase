@@ -3,7 +3,7 @@ package subscriptions
 import (
 	"sync"
 
-	"github.com/blinkinglight/pocketbase/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
 )
 
 // Message defines a client's channel data.

@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 )
 
 var _ Model = (*Param)(nil)

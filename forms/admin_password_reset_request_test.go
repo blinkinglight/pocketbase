@@ -3,8 +3,8 @@ package forms_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/forms"
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/forms"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 )
 
 func TestAdminPasswordResetRequestValidate(t *testing.T) {

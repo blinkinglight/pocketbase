@@ -3,8 +3,8 @@ package daos
 import (
 	"time"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	"github.com/pocketbase/dbx"
 )
 

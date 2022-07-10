@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/blinkinglight/pocketbase/apis"
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/tools/migrate"
+	"github.com/blinkinglight/pocketbase-mysql/apis"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/tools/migrate"
 	"github.com/fatih/color"
 	"github.com/labstack/echo/v5/middleware"
 	"github.com/spf13/cobra"

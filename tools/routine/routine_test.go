@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/routine"
+	"github.com/blinkinglight/pocketbase-mysql/tools/routine"
 )
 
 func TestFireAndForget(t *testing.T) {

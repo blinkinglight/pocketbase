@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tests"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	"github.com/pocketbase/dbx"
 )
 
@@ -15,7 +15,7 @@ func TestRequestQuery(t *testing.T) {
 	app, _ := tests.NewTestApp()
 	defer app.Cleanup()
 
-	expected := "SELECT {{_requests}}.* FROM `_requests`"
+	expected := "SELECT _requests.* FROM `_requests`"
 
 	sql := app.Dao().RequestQuery().Build().SQL()
 	if sql != expected {

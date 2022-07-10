@@ -4,12 +4,12 @@
 package core
 
 import (
-	"github.com/blinkinglight/pocketbase/daos"
-	"github.com/blinkinglight/pocketbase/tools/filesystem"
-	"github.com/blinkinglight/pocketbase/tools/hook"
-	"github.com/blinkinglight/pocketbase/tools/mailer"
-	"github.com/blinkinglight/pocketbase/tools/store"
-	"github.com/blinkinglight/pocketbase/tools/subscriptions"
+	"github.com/blinkinglight/pocketbase-mysql/daos"
+	"github.com/blinkinglight/pocketbase-mysql/tools/filesystem"
+	"github.com/blinkinglight/pocketbase-mysql/tools/hook"
+	"github.com/blinkinglight/pocketbase-mysql/tools/mailer"
+	"github.com/blinkinglight/pocketbase-mysql/tools/store"
+	"github.com/blinkinglight/pocketbase-mysql/tools/subscriptions"
 	"github.com/pocketbase/dbx"
 )
 

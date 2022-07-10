@@ -1,8 +1,8 @@
 package forms
 
 import (
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/models"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
 )

@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blinkinglight/pocketbase/forms"
-	"github.com/blinkinglight/pocketbase/tests"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/forms"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )
 

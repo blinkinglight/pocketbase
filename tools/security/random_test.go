@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
 )
 
 func TestRandomString(t *testing.T) {

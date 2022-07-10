@@ -3,7 +3,7 @@ package subscriptions_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/subscriptions"
+	"github.com/blinkinglight/pocketbase-mysql/tools/subscriptions"
 )
 
 func TestNewDefaultClient(t *testing.T) {

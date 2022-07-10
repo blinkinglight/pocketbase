@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blinkinglight/pocketbase/tools/list"
+	"github.com/blinkinglight/pocketbase-mysql/tools/list"
 	"github.com/pocketbase/dbx"
 	_ "modernc.org/sqlite"
 )

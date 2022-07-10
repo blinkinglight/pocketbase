@@ -4,17 +4,17 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tests"
-	"github.com/blinkinglight/pocketbase/tools/security"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 )
 
 func TestParamQuery(t *testing.T) {
 	app, _ := tests.NewTestApp()
 	defer app.Cleanup()
 
-	expected := "SELECT _params.* FROM `_params`"
+	expected := "SELECT `_params`.* FROM `_params`"
 
 	sql := app.Dao().ParamQuery().Build().SQL()
 	if sql != expected {

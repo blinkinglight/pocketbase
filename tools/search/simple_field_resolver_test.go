@@ -3,7 +3,7 @@ package search_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/search"
+	"github.com/blinkinglight/pocketbase-mysql/tools/search"
 	"github.com/pocketbase/dbx"
 )
 

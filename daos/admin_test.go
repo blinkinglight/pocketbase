@@ -3,15 +3,15 @@ package daos_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 )
 
 func TestAdminQuery(t *testing.T) {
 	app, _ := tests.NewTestApp()
 	defer app.Cleanup()
 
-	expected := "SELECT {{_admins}}.* FROM `_admins`"
+	expected := "SELECT _admins.* FROM `_admins`"
 
 	sql := app.Dao().AdminQuery().Build().SQL()
 	if sql != expected {
@@ -134,7 +134,7 @@ func TestTotalAdmins(t *testing.T) {
 	}
 
 	// delete all
-	app.Dao().DB().NewQuery("delete from {{_admins}}").Execute()
+	app.Dao().DB().NewQuery("delete from _admins").Execute()
 
 	result2, err := app.Dao().TotalAdmins()
 	if err != nil {

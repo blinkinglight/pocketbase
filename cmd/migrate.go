@@ -3,10 +3,10 @@ package cmd
 import (
 	"log"
 
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/migrations"
-	"github.com/blinkinglight/pocketbase/migrations/logs"
-	"github.com/blinkinglight/pocketbase/tools/migrate"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/migrations"
+	"github.com/blinkinglight/pocketbase-mysql/migrations/logs"
+	"github.com/blinkinglight/pocketbase-mysql/tools/migrate"
 	"github.com/pocketbase/dbx"
 	"github.com/spf13/cobra"
 )

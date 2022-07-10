@@ -3,7 +3,7 @@
 package logs
 
 import (
-	"github.com/blinkinglight/pocketbase/tools/migrate"
+	"github.com/blinkinglight/pocketbase-mysql/tools/migrate"
 	"github.com/pocketbase/dbx"
 )
 

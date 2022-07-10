@@ -3,9 +3,9 @@ package daos
 import (
 	"encoding/json"
 
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/tools/security"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	"github.com/pocketbase/dbx"
 )
 

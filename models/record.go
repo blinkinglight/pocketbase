@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/blinkinglight/pocketbase/models/schema"
-	"github.com/blinkinglight/pocketbase/tools/list"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/models/schema"
+	"github.com/blinkinglight/pocketbase-mysql/tools/list"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	"github.com/pocketbase/dbx"
 	"github.com/spf13/cast"
 )

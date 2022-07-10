@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/rest"
+	"github.com/blinkinglight/pocketbase-mysql/tools/rest"
 	"github.com/labstack/echo/v5"
 )
 

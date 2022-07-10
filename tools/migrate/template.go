@@ -4,7 +4,7 @@ const createTemplateContent = `package migrations
 
 import (
 	"github.com/pocketbase/dbx"
-	m "github.com/blinkinglight/pocketbase/migrations"
+	m "github.com/blinkinglight/pocketbase-mysql/migrations"
 )
 
 func init() {

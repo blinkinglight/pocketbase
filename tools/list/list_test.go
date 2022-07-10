@@ -3,8 +3,8 @@ package list_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/list"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/tools/list"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 )
 
 func TestExistInSliceString(t *testing.T) {

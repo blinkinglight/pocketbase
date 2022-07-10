@@ -3,7 +3,7 @@ package inflector_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/inflector"
+	"github.com/blinkinglight/pocketbase-mysql/tools/inflector"
 )
 
 func TestUcFirst(t *testing.T) {

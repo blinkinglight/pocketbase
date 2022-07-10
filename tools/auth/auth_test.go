@@ -3,7 +3,7 @@ package auth_test
 import (
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/tools/auth"
+	"github.com/blinkinglight/pocketbase-mysql/tools/auth"
 )
 
 func TestNewProviderByName(t *testing.T) {

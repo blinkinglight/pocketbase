@@ -3,7 +3,7 @@ package models
 import (
 	"encoding/json"
 
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 )
 
 var _ Model = (*User)(nil)

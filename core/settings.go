@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/blinkinglight/pocketbase/tools/auth"
-	"github.com/blinkinglight/pocketbase/tools/security"
+	"github.com/blinkinglight/pocketbase-mysql/tools/auth"
+	"github.com/blinkinglight/pocketbase-mysql/tools/security"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
 )

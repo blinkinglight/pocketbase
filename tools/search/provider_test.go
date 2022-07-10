@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pocketbase/base/tools/list"
+	"github.com/blinkinglight/pocketbase-mysql/tools/list"
 	"github.com/pocketbase/dbx"
 	_ "modernc.org/sqlite"
 )
@@ -344,7 +344,7 @@ func TestProviderExecNonEmptyQuery(t *testing.T) {
 
 		for _, q := range testDB.CalledQueries {
 			if !list.ExistInSliceWithRegex(q, s.expectQueries) {
-				t.Errorf("(%d) Didn't expect query %v \n got %v", i, q)
+				t.Errorf("(%d) Didn't expect query %v", i, q)
 			}
 		}
 	}

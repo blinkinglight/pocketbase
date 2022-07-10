@@ -5,8 +5,8 @@ import (
 	"errors"
 	"regexp"
 
-	"github.com/blinkinglight/pocketbase/tools/list"
-	"github.com/blinkinglight/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase-mysql/tools/list"
+	"github.com/blinkinglight/pocketbase-mysql/tools/types"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
 	"github.com/spf13/cast"

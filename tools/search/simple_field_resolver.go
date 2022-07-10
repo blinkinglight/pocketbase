@@ -3,8 +3,8 @@ package search
 import (
 	"fmt"
 
-	"github.com/blinkinglight/pocketbase/tools/inflector"
-	"github.com/blinkinglight/pocketbase/tools/list"
+	"github.com/blinkinglight/pocketbase-mysql/tools/inflector"
+	"github.com/blinkinglight/pocketbase-mysql/tools/list"
 	"github.com/pocketbase/dbx"
 )
 

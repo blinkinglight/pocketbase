@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/blinkinglight/pocketbase/apis"
-	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase-mysql/apis"
+	"github.com/blinkinglight/pocketbase-mysql/tests"
 	"github.com/labstack/echo/v5"
 )
 
@@ -318,7 +318,7 @@ func TestRequireAdminAuthOnlyIfAny(t *testing.T) {
 			Url:    "/my/test",
 			BeforeFunc: func(t *testing.T, app *tests.TestApp, e *echo.Echo) {
 				// delete all admins
-				_, err := app.Dao().DB().NewQuery("DELETE FROM {{_admins}}").Execute()
+				_, err := app.Dao().DB().NewQuery("DELETE FROM _admins").Execute()
 				if err != nil {
 					t.Fatal(err)
 				}

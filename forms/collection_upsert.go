@@ -4,11 +4,11 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/blinkinglight/pocketbase/core"
-	"github.com/blinkinglight/pocketbase/models"
-	"github.com/blinkinglight/pocketbase/models/schema"
-	"github.com/blinkinglight/pocketbase/resolvers"
-	"github.com/blinkinglight/pocketbase/tools/search"
+	"github.com/blinkinglight/pocketbase-mysql/core"
+	"github.com/blinkinglight/pocketbase-mysql/models"
+	"github.com/blinkinglight/pocketbase-mysql/models/schema"
+	"github.com/blinkinglight/pocketbase-mysql/resolvers"
+	"github.com/blinkinglight/pocketbase-mysql/tools/search"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )
 

@@ -4,7 +4,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase-mysql/core"
 	"github.com/spf13/cobra"
 )
 
