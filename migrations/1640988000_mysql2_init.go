@@ -36,9 +36,9 @@ func init() {
 				passwordHash    TEXT NOT NULL,
 				lastResetSentAt TEXT DEFAULT '' NOT NULL,
 				created         TEXT DEFAULT '' NOT NULL,
-				updated         TEXT DEFAULT '' NOT NULL,
+				updated         TEXT DEFAULT '' NOT NULL
 			);
-
+			
 			ALTER TABLE {{_admins}}
 			ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
 			COMMIT;
@@ -52,7 +52,7 @@ func init() {
 				lastResetSentAt        TEXT DEFAULT '' NOT NULL,
 				lastVerificationSentAt TEXT DEFAULT '' NOT NULL,
 				created                TEXT DEFAULT '' NOT NULL,
-				updated                TEXT DEFAULT '' NOT NULL,
+				updated                TEXT DEFAULT '' NOT NULL
 			);
 
 			ALTER TABLE {{_users}}
@@ -70,7 +70,7 @@ func init() {
 				updateRule TEXT DEFAULT NULL,
 				deleteRule TEXT DEFAULT NULL,
 				created    TEXT DEFAULT '' NOT NULL,
-				updated    TEXT DEFAULT '' NOT NULL,
+				updated    TEXT DEFAULT '' NOT NULL
 			);
 			ALTER TABLE {{_collections}}
 		ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
@@ -81,7 +81,7 @@ func init() {
 				key     TEXT UNIQUE NOT NULL,
 				value   JSON DEFAULT NULL,
 				created TEXT DEFAULT '' NOT NULL,
-				updated TEXT DEFAULT '' NOT NULL,
+				updated TEXT DEFAULT '' NOT NULL
 			);
 
 			ALTER TABLE {{_params}}
