@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/list"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/models/schema"
+	"github.com/blinkinglight/pocketbase/tools/list"
 )
 
 // MaxExpandDepth specifies the max allowed nested expand depth path.

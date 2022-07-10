@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/models/schema"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
 )
 
 // CollectionQuery returns a new Collection select query.

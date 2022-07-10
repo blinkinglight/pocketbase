@@ -3,9 +3,9 @@ package forms_test
 import (
 	"testing"
 
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/security"
+	"github.com/blinkinglight/pocketbase/forms"
+	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase/tools/security"
 )
 
 func TestAdminPasswordResetConfirmValidate(t *testing.T) {

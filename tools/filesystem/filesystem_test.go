@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/tools/filesystem"
+	"github.com/blinkinglight/pocketbase/tools/filesystem"
 )
 
 func TestFileSystemExists(t *testing.T) {

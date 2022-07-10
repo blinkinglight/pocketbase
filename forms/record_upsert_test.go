@@ -9,14 +9,14 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/daos"
+	"github.com/blinkinglight/pocketbase/forms"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase/tools/list"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/list"
 )
 
 func TestNewRecordUpsert(t *testing.T) {

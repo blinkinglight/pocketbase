@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/tools/rest"
+	"github.com/blinkinglight/pocketbase/ui"
 	"github.com/labstack/echo/v5"
 	"github.com/labstack/echo/v5/middleware"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/rest"
-	"github.com/pocketbase/pocketbase/ui"
 	"github.com/spf13/cast"
 )
 

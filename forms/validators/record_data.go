@@ -6,15 +6,15 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/blinkinglight/pocketbase/daos"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/models/schema"
+	"github.com/blinkinglight/pocketbase/tools/list"
+	"github.com/blinkinglight/pocketbase/tools/rest"
+	"github.com/blinkinglight/pocketbase/tools/types"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/list"
-	"github.com/pocketbase/pocketbase/tools/rest"
-	"github.com/pocketbase/pocketbase/tools/types"
 )
 
 var requiredErr = validation.NewError("validation_required", "Missing required value")

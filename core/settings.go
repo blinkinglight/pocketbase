@@ -7,10 +7,10 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/blinkinglight/pocketbase/tools/auth"
+	"github.com/blinkinglight/pocketbase/tools/security"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/tools/auth"
-	"github.com/pocketbase/pocketbase/tools/security"
 )
 
 // Common settings placeholder tokens

@@ -1,6 +1,6 @@
 package models
 
-import "github.com/pocketbase/pocketbase/models/schema"
+import "github.com/blinkinglight/pocketbase/models/schema"
 
 var _ Model = (*Collection)(nil)
 

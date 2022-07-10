@@ -5,10 +5,10 @@ import (
 	"net/mail"
 	"strings"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/mails/templates"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tokens"
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/mails/templates"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/tokens"
 )
 
 // SendAdminPasswordReset sends a password reset request email to the specified admin.

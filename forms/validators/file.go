@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/blinkinglight/pocketbase/tools/rest"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/tools/rest"
 )
 
 // UploadedFileSize checks whether the validated `rest.UploadedFile`

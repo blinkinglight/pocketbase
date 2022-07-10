@@ -1,10 +1,10 @@
 package tokens
 
 import (
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/tools/security"
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tools/security"
 )
 
 // NewUserAuthToken generates and returns a new user authentication token.

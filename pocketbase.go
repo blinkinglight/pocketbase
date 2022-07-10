@@ -9,8 +9,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/pocketbase/pocketbase/cmd"
-	"github.com/pocketbase/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/cmd"
+	"github.com/blinkinglight/pocketbase/core"
 	"github.com/spf13/cobra"
 )
 

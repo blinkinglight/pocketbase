@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/mailer"
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/tools/mailer"
 )
 
 // TestApp is a wrapper app instance used for testing.

@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/pocketbase/pocketbase/tools/security"
+	"github.com/blinkinglight/pocketbase/tools/security"
 )
 
 // DefaultMaxMemory defines the default max memory bytes that

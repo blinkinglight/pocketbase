@@ -1,10 +1,10 @@
 package forms
 
 import (
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/models"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
 )
 
 // UserEmailLogin defines a user email/pass login form.

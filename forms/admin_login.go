@@ -3,10 +3,10 @@ package forms
 import (
 	"errors"
 
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/models"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
 )
 
 // AdminLogin defines an admin email/pass login form.

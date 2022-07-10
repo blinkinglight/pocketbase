@@ -7,12 +7,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/tools/rest"
+	"github.com/blinkinglight/pocketbase/tools/routine"
+	"github.com/blinkinglight/pocketbase/tools/types"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tools/rest"
-	"github.com/pocketbase/pocketbase/tools/routine"
-	"github.com/pocketbase/pocketbase/tools/types"
 	"github.com/spf13/cast"
 )
 

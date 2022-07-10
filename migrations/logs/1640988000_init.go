@@ -3,8 +3,8 @@
 package logs
 
 import (
+	"github.com/blinkinglight/pocketbase/tools/migrate"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/tools/migrate"
 )
 
 var LogsMigrations migrate.MigrationsList

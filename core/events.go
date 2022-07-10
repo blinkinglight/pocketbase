@@ -1,13 +1,13 @@
 package core
 
 import (
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/auth"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/search"
-	"github.com/pocketbase/pocketbase/tools/subscriptions"
+	"github.com/blinkinglight/pocketbase/daos"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/models/schema"
+	"github.com/blinkinglight/pocketbase/tools/auth"
+	"github.com/blinkinglight/pocketbase/tools/mailer"
+	"github.com/blinkinglight/pocketbase/tools/search"
+	"github.com/blinkinglight/pocketbase/tools/subscriptions"
 
 	"github.com/labstack/echo/v5"
 )

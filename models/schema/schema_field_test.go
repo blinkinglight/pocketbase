@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/blinkinglight/pocketbase/models/schema"
+	"github.com/blinkinglight/pocketbase/tools/types"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/types"
 )
 
 func TestReservedFieldNames(t *testing.T) {

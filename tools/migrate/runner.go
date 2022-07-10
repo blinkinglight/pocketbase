@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/AlecAivazis/survey/v2"
+	"github.com/blinkinglight/pocketbase/tools/inflector"
 	"github.com/fatih/color"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/tools/inflector"
 	"github.com/spf13/cast"
 )
 

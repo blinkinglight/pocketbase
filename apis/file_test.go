@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase/tests"
 )
 
 func TestFileDownload(t *testing.T) {

@@ -1,12 +1,12 @@
 package apis
 
 import (
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/models/schema"
+	"github.com/blinkinglight/pocketbase/tools/list"
+	"github.com/blinkinglight/pocketbase/tools/rest"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/list"
-	"github.com/pocketbase/pocketbase/tools/rest"
 )
 
 var imageContentTypes = []string{"image/png", "image/jpg", "image/jpeg"}

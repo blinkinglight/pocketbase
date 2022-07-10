@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/blinkinglight/pocketbase/forms"
+	"github.com/blinkinglight/pocketbase/tests"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/tests"
 )
 
 func TestUserEmailChangeRequestValidateAndSubmit(t *testing.T) {

@@ -3,10 +3,10 @@ package apis
 import (
 	"net/http"
 
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/forms"
+	"github.com/blinkinglight/pocketbase/tools/rest"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/tools/rest"
 )
 
 // BindSettingsApi registers the settings api endpoints.

@@ -4,8 +4,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/core"
+	"github.com/blinkinglight/pocketbase/models"
 )
 
 // SettingsUpsert defines app settings upsert form.

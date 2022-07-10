@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/resolvers"
-	"github.com/pocketbase/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase/resolvers"
+	"github.com/blinkinglight/pocketbase/tests"
 )
 
 func TestRecordFieldResolverUpdateQuery(t *testing.T) {

@@ -9,16 +9,16 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/blinkinglight/pocketbase/daos"
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/tools/filesystem"
+	"github.com/blinkinglight/pocketbase/tools/hook"
+	"github.com/blinkinglight/pocketbase/tools/mailer"
+	"github.com/blinkinglight/pocketbase/tools/security"
+	"github.com/blinkinglight/pocketbase/tools/store"
+	"github.com/blinkinglight/pocketbase/tools/subscriptions"
 	"github.com/fatih/color"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/security"
-	"github.com/pocketbase/pocketbase/tools/store"
-	"github.com/pocketbase/pocketbase/tools/subscriptions"
 )
 
 var _ App = (*BaseApp)(nil)

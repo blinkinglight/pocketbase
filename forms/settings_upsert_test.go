@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
+	"github.com/blinkinglight/pocketbase/forms"
+	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase/tools/security"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/security"
 )
 
 func TestNewSettingsUpsert(t *testing.T) {

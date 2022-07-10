@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/blinkinglight/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase/tools/rest"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/rest"
 )
 
 func Test404(t *testing.T) {

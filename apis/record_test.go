@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/blinkinglight/pocketbase/tests"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/tests"
 )
 
 func TestRecordsList(t *testing.T) {

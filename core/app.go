@@ -4,13 +4,13 @@
 package core
 
 import (
+	"github.com/blinkinglight/pocketbase/daos"
+	"github.com/blinkinglight/pocketbase/tools/filesystem"
+	"github.com/blinkinglight/pocketbase/tools/hook"
+	"github.com/blinkinglight/pocketbase/tools/mailer"
+	"github.com/blinkinglight/pocketbase/tools/store"
+	"github.com/blinkinglight/pocketbase/tools/subscriptions"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/store"
-	"github.com/pocketbase/pocketbase/tools/subscriptions"
 )
 
 // App defines the main PocketBase app interface.

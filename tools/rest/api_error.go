@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/blinkinglight/pocketbase/tools/inflector"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/tools/inflector"
 )
 
 // ApiError defines the properties for a basic api error response.

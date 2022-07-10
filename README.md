@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/pocketbase/pocketbase/actions/workflows/release.yaml" target="_blank" rel="noopener"><img src="https://github.com/pocketbase/pocketbase/actions/workflows/release.yaml/badge.svg" alt="build" /></a>
-    <a href="https://github.com/pocketbase/pocketbase/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/github/release/pocketbase/pocketbase.svg" alt="Latest releases" /></a>
-    <a href="https://pkg.go.dev/github.com/pocketbase/pocketbase" target="_blank" rel="noopener"><img src="https://godoc.org/github.com/ganigeorgiev/fexpr?status.svg" alt="Go package documentation" /></a>
+    <a href="https://github.com/blinkinglight/pocketbase/actions/workflows/release.yaml" target="_blank" rel="noopener"><img src="https://github.com/blinkinglight/pocketbase/actions/workflows/release.yaml/badge.svg" alt="build" /></a>
+    <a href="https://github.com/blinkinglight/pocketbase/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/github/release/pocketbase/pocketbase.svg" alt="Latest releases" /></a>
+    <a href="https://pkg.go.dev/github.com/blinkinglight/pocketbase" target="_blank" rel="noopener"><img src="https://godoc.org/github.com/ganigeorgiev/fexpr?status.svg" alt="Go package documentation" /></a>
 </p>
 
 [PocketBase](https://pocketbase.io) is an open source Go backend, consisting of:
@@ -41,9 +41,9 @@ your own custom app specific business logic and still have a single portable exe
 
 ```sh
 # go 1.18+
-go get github.com/pocketbase/pocketbase
+go get github.com/blinkinglight/pocketbase
 ```
-> For Windows, you may have to use go 1.19+ due to an incorrect js mime type in the Windows Registry (see [issue#6](https://github.com/pocketbase/pocketbase/issues/6)).
+> For Windows, you may have to use go 1.19+ due to an incorrect js mime type in the Windows Registry (see [issue#6](https://github.com/blinkinglight/pocketbase/issues/6)).
 
 ### Example
 
@@ -55,9 +55,9 @@ import (
     "net/http"
 
     "github.com/labstack/echo/v5"
-    "github.com/pocketbase/pocketbase"
-    "github.com/pocketbase/pocketbase/apis"
-    "github.com/pocketbase/pocketbase/core"
+    "github.com/blinkinglight/pocketbase"
+    "github.com/blinkinglight/pocketbase/apis"
+    "github.com/blinkinglight/pocketbase/core"
 )
 
 func main() {
@@ -118,7 +118,7 @@ PocketBase is free and open source project licensed under the [MIT License](LICE
 
 You could help continuing its development by:
 
-- [Suggest new features, report issues and fix bugs](https://github.com/pocketbase/pocketbase/issues)
+- [Suggest new features, report issues and fix bugs](https://github.com/blinkinglight/pocketbase/issues)
 - [Donate a small amount](https://pocketbase.io/support-us)
 
 > Please also note that PocketBase was initially created to serve as a new backend for my other open source project - [Presentator](https://presentator.io) (see [#183](https://github.com/presentator/presentator/issues/183)),

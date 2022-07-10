@@ -4,7 +4,7 @@ import (
 	"io"
 	"net/mail"
 
-	"github.com/pocketbase/pocketbase/tools/mailer"
+	"github.com/blinkinglight/pocketbase/tools/mailer"
 )
 
 var _ mailer.Mailer = (*TestMailer)(nil)

@@ -3,7 +3,7 @@ package models
 import (
 	"encoding/json"
 
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/blinkinglight/pocketbase/tools/types"
 )
 
 var _ Model = (*User)(nil)

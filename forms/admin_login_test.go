@@ -3,8 +3,8 @@ package forms_test
 import (
 	"testing"
 
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/tests"
+	"github.com/blinkinglight/pocketbase/forms"
+	"github.com/blinkinglight/pocketbase/tests"
 )
 
 func TestAdminLoginValidate(t *testing.T) {

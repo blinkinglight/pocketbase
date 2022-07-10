@@ -5,10 +5,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/blinkinglight/pocketbase/models"
+	"github.com/blinkinglight/pocketbase/tests"
 	"github.com/labstack/echo/v5"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tests"
 )
 
 func TestAdminAuth(t *testing.T) {
