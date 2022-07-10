@@ -185,7 +185,7 @@ func (s *Provider) Exec(items any) (*Result, error) {
 				return nil, err
 			}
 			if expr != "" {
-				modelsQuery.AndOrderBy(expr)
+				modelsQuery.AndGroupBy(sortField.Name).AndOrderBy(expr)
 			}
 		}
 	}
