@@ -37,7 +37,7 @@ func init() {
 				lastResetSentAt TEXT DEFAULT '' NOT NULL,
 				created         TEXT DEFAULT '' NOT NULL,
 				updated         TEXT DEFAULT '' NOT NULL
-			);
+			) ENGINE = InnoDB;
 			
 			-- ALTER TABLE {{_admins}}
 			-- ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
@@ -53,7 +53,7 @@ func init() {
 				lastVerificationSentAt TEXT DEFAULT '' NOT NULL,
 				created                TEXT DEFAULT '' NOT NULL,
 				updated                TEXT DEFAULT '' NOT NULL
-			);
+			) ENGINE = InnoDB;
 
 			-- ALTER TABLE {{_users}}
 		-- ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
@@ -71,7 +71,7 @@ func init() {
 				deleteRule TEXT DEFAULT NULL,
 				created    TEXT DEFAULT '' NOT NULL,
 				updated    TEXT DEFAULT '' NOT NULL
-			);
+			) ENGINE = InnoDB;
 			-- ALTER TABLE {{_collections}}
 			-- ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
 			-- COMMIT;
@@ -82,7 +82,7 @@ func init() {
 				value   JSON DEFAULT NULL,
 				created TEXT DEFAULT '' NOT NULL,
 				updated TEXT DEFAULT '' NOT NULL
-			);
+			) ENGINE = InnoDB;
 
 			-- ALTER TABLE {{_params}}
 			-- ADD PRIMARY KEY (` + "`" + `id` + "`" + `(200));
