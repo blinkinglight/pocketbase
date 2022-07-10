@@ -12,23 +12,25 @@ var LogsMigrations migrate.MigrationsList
 func init() {
 	LogsMigrations.Register(func(db dbx.Builder) (err error) {
 		_, err = db.NewQuery(`
-			CREATE TABLE {{_requests}} (
-				id        TEXT PRIMARY KEY,
-				url       TEXT DEFAULT '' NOT NULL,
-				method    TEXT DEFAULT 'get' NOT NULL,
-				status    INTEGER DEFAULT 200 NOT NULL,
-				auth      TEXT DEFAULT 'guest' NOT NULL,
-				ip        TEXT DEFAULT '127.0.0.1' NOT NULL,
-				referer   TEXT DEFAULT '' NOT NULL,
-				userAgent TEXT DEFAULT '' NOT NULL,
-				meta      JSON DEFAULT '{}' NOT NULL,
-				created   TEXT DEFAULT '' NOT NULL,
-				updated   TEXT DEFAULT '' NOT NULL
-			);
 
-			CREATE INDEX _request_status_idx on {{_requests}} (status);
-			CREATE INDEX _request_auth_idx on {{_requests}} (auth);
-			CREATE INDEX _request_ip_idx on {{_requests}} (ip);
+		CREATE TABLE {{_requests}} (
+			id TEXT NOT NULL ,
+			url TEXT NOT NULL DEFAULT '' ,
+			method TEXT NOT NULL DEFAULT 'get' , 
+			status INT NOT NULL DEFAULT '200' ,
+			auth TEXT NOT NULL DEFAULT 'guest' ,
+			ip TEXT NOT NULL DEFAULT '127.0.0.1' ,
+			referer TEXT NOT NULL DEFAULT '' , 
+			userAgent TEXT NOT NULL DEFAULT 'guest' , 
+			meta JSON NOT NULL DEFAULT '{}',
+			created TEXT NOT NULL DEFAULT '' ,
+			updated TEXT NOT NULL DEFAULT '' ,
+			PRIMARY KEY (id)
+		) ENGINE = InnoDB;
+
+		CREATE INDEX _request_status_idx on {{_requests}} (status);
+		CREATE INDEX _request_auth_idx on {{_requests}} (auth);
+		CREATE INDEX _request_ip_idx on {{_requests}} (ip);
 		`).Execute()
 
 		return err
