@@ -28,9 +28,9 @@ func init() {
 			PRIMARY KEY (id)
 		) ENGINE = InnoDB;
 
-		CREATE INDEX _request_status_idx on {{_requests}} (status);
-		CREATE INDEX _request_auth_idx on {{_requests}} (auth);
-		CREATE INDEX _request_ip_idx on {{_requests}} (ip);
+		-- CREATE INDEX _request_status_idx on {{_requests}} (status);
+		-- CREATE INDEX _request_auth_idx on {{_requests}} (auth);
+		-- CREATE INDEX _request_ip_idx on {{_requests}} (ip);
 		`).Execute()
 
 		return err
